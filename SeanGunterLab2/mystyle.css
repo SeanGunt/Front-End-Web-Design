@@ -1,0 +1,29 @@
+/* Specifies width and height */
+*{
+  box-sizing: border-box;
+}
+/* Set Background color to gray*/
+body {
+  background-color: #b09F98;
+}
+/*Center Text and set color to orange*/
+h1 {
+  color: #d6612a;
+  text-align: center;
+  font-size: xx-large;
+}
+/*Determins how boxes are drawn for element*/
+.row{
+  display: flex;
+}
+/*Flex determines how elements are sorted in column and pading adds distance between elements*/
+.column{
+  flex: 33.3%;
+  padding: 25px;
+}
+/*centers all text, adss color, and changes font for p elements*/
+p{
+  text-align: center;
+  color: #632F1C;
+  font-size: large;
+}
