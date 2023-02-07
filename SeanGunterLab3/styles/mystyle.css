@@ -1,0 +1,40 @@
+/* Specifies width and height */
+*{
+  box-sizing: border-box;
+}
+/* Set Background color to gray*/
+body {
+  background-color: #b09F98;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/*Center Text and set color to orange*/
+h1 {
+  color: #d6612a;
+  text-align: center;
+  font-size: 25pt;
+}
+h2 {
+  color:firebrick;
+  text-align: center;
+  font-size: 40pt;
+}
+/*Determins how boxes are drawn for element*/
+.row{
+  display: flex;
+}
+/*Flex determines how elements are sorted in column and padding adds distance between elements*/
+.column{
+  flex: 33.3%;
+  padding: 25px;
+}
+/*centers all text, adds color, and changes font for p elements*/
+p{
+  color: #632F1C;
+  font-size: 13pt;
+}
+/*Makes borders for all images*/
+img{
+  border: 0.5em;
+  border-style:ridge;
+  border-color: #d6612a;
+}
