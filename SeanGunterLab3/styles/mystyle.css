@@ -1,11 +1,16 @@
+/* import font*/
+@font-face {
+  font-family: 'DoomFont';
+  src: url(../assets/fonts/DoomFont.ttf);
+}
 /* Specifies width and height */
 *{
   box-sizing: border-box;
 }
-/* Set Background color to gray*/
+/* Set Background color gradient and add font for all non-title elemets*/
 body {
-  background-color: #b09F98;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(to bottom, #B09F98, black);
+  font-family:Georgia, 'Times New Roman', Times, serif;
 }
 /*Center Text and set color to orange*/
 h1 {
@@ -16,9 +21,14 @@ h1 {
 h2 {
   color:firebrick;
   text-align: center;
-  font-size: 40pt;
+  font-size: 60pt;
+  font-family: DoomFont;
 }
-/*Determins how boxes are drawn for element*/
+h3 {
+  color: #d6612a;
+  font-size: 25pt;
+}
+/*Determinse how boxes are drawn for element*/
 .row{
   display: flex;
 }
@@ -27,13 +37,18 @@ h2 {
   flex: 33.3%;
   padding: 25px;
 }
-/*centers all text, adds color, and changes font for p elements*/
+/* Make text stay on left side of screen*/
+.left{
+  width: 33%;
+}
+/*adds color, and changes font for p elements*/
 p{
-  color: #632F1C;
+  color: whitesmoke;
   font-size: 13pt;
 }
-/*Makes borders for all images*/
+/*Makes borders for all images and set width*/
 img{
+  width: 100%;
   border: 0.5em;
   border-style:ridge;
   border-color: #d6612a;
