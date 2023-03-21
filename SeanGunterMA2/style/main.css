@@ -1,0 +1,105 @@
+@media screen and (max-width: 600px){
+    .planets1{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .planets2{
+        display: none;
+    }
+    .planets3{
+        display: none;
+    }
+    .planets4{
+        display: none;
+    }
+    img{
+        width: 60%;
+    }
+    h1{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1200px){
+    .planets1{
+        display: none;
+    }
+    .planets2{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .planets3{
+        display: none;
+    }
+    .planets4{
+        display: none;
+    }
+    img{
+        width: 70%;
+    }
+    h1{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width:1800px){
+    .planets1{
+        display: none;
+    }
+    .planets2{
+        display: none;
+    }
+    .planets3{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .planets4{
+        display: none;
+    }
+    img{
+        width: 80%;
+    }
+    h1{
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 1800px){
+    .planets1{
+        display: none;
+    }
+    .planets2{
+        display: none;
+    }
+    .planets3{
+        display: none;
+    }
+    .planets4{
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+    img{
+        width: 90%;
+    }
+    h1{
+        font-size: 30px;
+    }
+}
+.grid-item{
+    text-align: center;
+    padding: 10px;
+}
+body{
+    background-image: url("../images/background.jpg");
+    background-size: 100%;
+    background-color: black;
+}
+
+h1{
+    color: beige;
+}
+
+img{
+    margin-left: auto;
+    margin-right: auto;
+}
