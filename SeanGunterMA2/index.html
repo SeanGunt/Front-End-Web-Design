@@ -7,39 +7,57 @@
 </head>
 <body>s
 <title>The Planets</title>
-<div class = "grid1">
-    <div class ="planets1 grid-item">
+<!--So all of the classes called planets(number) all do the same thing so I am just gonna describe one of them. Essentially they are the class
+that contains all of the grid information for everything inside the class. Then the sublcasses called mercury, venus, and sun are containers that work as 
+grid-items. Each one can be manipulated into sections of the grid in order to create different combinations based on screen size.-->
+<div class ="planets1 grid-item">
+    <div class = "mercury">
+        <!--All of the h1 elements contain the average distance of the corresponding planet-->
         <h1>Mercury Average Distance From Sun: 36 Million Miles</h1>
-        <img src="images/mercury.jpg">
-        <img src="images/sun.png" class="sun">
+        <!-- Image of planet -->
+        <img src="images/mercury.png">
+    </div>
+    <img src="images/sun.png" class="sun">
+    <div class = "venus">
         <h1>Venus Average Distance From Sun: 67 Million Miles</h1>
-        <img src="images/venus.jpg">
+        <img src="images/venus.png">
     </div>
 </div>
-<div class = "grid2">
     <div class ="planets2 grid-item">
-        <h1>Earth Average Distance From Sun: 93 Million Miles</h1>
-        <h1>Mars Average Distance From Sun: 142 Million Miles</h1>
-        <img src="images/earth.jpg">
-        <img src="images/mars.png">
-    </div>
+        <div class = "earth">
+            <h1>Earth Average Distance From Sun: 93 Million Miles</h1>
+            <img src="images/earth.png">
+        </div>
+        <img src="images/sun.png" class="sun">
+        <div class = "mars">
+            <h1>Mars Average Distance From Sun: 142 Million Miles</h1>
+            <img src="images/mars.png">
+        </div>
 </div>
-<div class = "grid3">
-    <div class ="planets3 grid-item">
+<div class ="planets3 grid-item">
+    <div class = "jupiter">
         <h1>Jupiter Average Distance From Sun: 484 Million Miles</h1>
+        <img src="images/jupiter.png">
+    </div>
+    <img src="images/sun.png" class="sun">
+    <div class = "saturn">
         <h1>Saturn Average Distance From Sun: 891 Million Miles</h1>
-        <img src="images/jupiter.jpg">
-        <img src="images/saturn.jpg">
+        <img src="images/saturn.png">
     </div>
 </div>
-<div class = "grid4">
-    <div class ="planets4 grid-item">
+<div class ="planets4 grid-item">
+    <div class = "uranus">
         <h1>Uranus Average Distance From Sun: 1.8 Billion Miles</h1>
+        <img src="images/uranus.png">
+    </div>
+    <div class = "neptune">
         <h1>Neptune Average Distance From Sun: 2.8 Billion Miles</h1>
+        <img src="images/neptune.png">
+    </div>
+    <img src="images/sun.png" class="sun">
+    <div class = "pluto">
         <h1>Pluto Average Distance From Sun: 3.67 Billion Miles</h1>
-        <img src="images/uranus.jpg">
-        <img src="images/neptune.jpg">
-        <img src="images/pluto.jpg">
+        <img src="images/pluto.png">
     </div>
 </div>
 </body>

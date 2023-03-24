@@ -1,3 +1,8 @@
+/*First media query that controls when the window is less than 600px in width. Essentially what is happening is that
+I am only displaying information from the planets1 class and the other three planets classes arent being displayed.
+The reason I am using display none versus changing the opacity or visibility is that the ladder effects the formatting
+even when not visual. I also do some other basic changes like making all images 60% width and changing the heading font
+to 15px since the screen is smaller. All of the other media quereys work the same way.*/
 @media screen and (max-width: 600px){
     .planets1{
         display: grid;
@@ -18,15 +23,20 @@
     h1{
         font-size: 15px;
     }
+    .sun{
+        width: 20%;
+    }
 }
 
 @media screen and (min-width: 600px) and (max-width: 1200px){
     .planets1{
         display: none;
     }
+    /* Creates a grid for planets2 with 3 columns and 3 rows*/
     .planets2{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
     }
     .planets3{
         display: none;
@@ -35,10 +45,24 @@
         display: none;
     }
     img{
-        width: 70%;
+        width: 100%;
     }
     h1{
         font-size: 20px;
+    }
+    /* The planet classes essentially assign grid positions for each planet and text combination*/
+    .earth{
+        grid-row: 1;
+        grid-column: 1;
+    }
+    .mars{
+        grid-row: 3;
+        grid-column: 3;
+    }
+    .sun{
+        grid-column: 2;
+        grid-row: 2;
+        width: 15%;
     }
 }
 
@@ -51,7 +75,8 @@
     }
     .planets3{
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
     }
     .planets4{
         display: none;
@@ -61,6 +86,19 @@
     }
     h1{
         font-size: 25px;
+    }
+    .jupiter{
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .saturn{
+        grid-row: 1;
+        grid-column: 3;
+    }
+    .sun{
+        grid-row: 2;
+        grid-column: 2;
+        width: 10%;
     }
 }
 
@@ -77,6 +115,7 @@
     .planets4{
         display: grid;
         grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
     }
     img{
         width: 85%;
@@ -84,27 +123,44 @@
     h1{
         font-size: 30px;
     }
+    .neptune{
+        grid-column: 3;
+        grid-row: 1;
+    }
+    .pluto{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .uranus{
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .sun{
+        grid-row: 2;
+        grid-column: 2;
+        width: 5%;
+
+    }
 }
 
+/*centers all text and pads images by 10px for grid-items*/
 .grid-item{
     text-align: center;
     padding: 10px;
 }
 
-.sun{
-    width: 25%;
-}
-
+/*assigns background image, size, and color*/
 body{
     background-image: url("../images/background.jpg");
     background-size: 100%;
     background-color: black;
 }
-
+/*changes all h1 elements to beige color*/
 h1{
     color: beige;
 }
 
+/*making all of the margins auto essentially allows for the images to be centered*/
 img{
     margin-left: auto;
     margin-right: auto;
